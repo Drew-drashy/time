@@ -1,6 +1,6 @@
 const { checkIfInsideGeofence } = require('../utils/geoUtils');
 const Geofence = require('../models/Geofence');
-const TimeLog = require('../models/TimeLog'); // Optional if you want to auto-end session
+const TimeLog = require('../models/Timelog.js'); // Optional if you want to auto-end session
 const Project=require('../models/Project');
 let io;
 exports.setupSocket = (server) => {
