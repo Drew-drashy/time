@@ -1,8 +1,8 @@
-const User= require('../models/User');
-const protect =require('../middleware/authMiddleware');
-const { getProfile } = require('./authController');
+const User= require('../models/User.js');
+const protect =require('../middleware/authMiddleware.js');
+const { getProfile } = require('./authController.js');
 const e = require('express');
-const Project=require('../models/Project');
+const Project=require('../models/Project.js');
 
 exports.getEmployee= async (req,res)=>{
     // console.log('hii');

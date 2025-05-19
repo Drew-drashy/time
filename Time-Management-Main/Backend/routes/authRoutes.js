@@ -1,9 +1,9 @@
 const express = require('express');
-const { register, login, getProfile } = require('../controllers/authController');
-const { protect } = require('../middleware/authMiddleware');
+const { register, login, getProfile } = require('../controllers/authController.js');
+const { protect } = require('../middleware/authMiddleware.js');
 const router = express.Router();
-const { updateProfile } = require('../controllers/authController');
-const upload = require('../middleware/uploadMiddleware');
+const { updateProfile } = require('../controllers/authController.js');
+const upload = require('../middleware/uploadMiddleware.js');
 
 router.post('/register', register);
 router.post('/login', login);

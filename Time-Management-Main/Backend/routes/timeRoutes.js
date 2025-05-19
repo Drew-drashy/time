@@ -1,6 +1,6 @@
 const express = require('express');
-const { startSession, endSession, getLogs, getLogsByAdmin } = require('../controllers/timeTrackingController');
-const { protect } = require('../middleware/authMiddleware');
+const { startSession, endSession, getLogs, getLogsByAdmin } = require('../controllers/timeTrackingController.js');
+const { protect } = require('../middleware/authMiddleware.js');
 const router = express.Router();
 
 router.post('/time/start', protect, startSession);

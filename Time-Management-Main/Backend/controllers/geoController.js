@@ -1,4 +1,4 @@
-const Geofence = require('../models/Geofence');
+const Geofence = require('../models/Geofence.js');
 
 exports.createGeofence = async (req, res) => {
   try {

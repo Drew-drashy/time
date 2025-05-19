@@ -1,6 +1,6 @@
 const express = require('express');
-const { createProject, getProjects, updateProject, deleteProject } = require('../controllers/projectController');
-const { protect } = require('../middleware/authMiddleware');
+const { createProject, getProjects, updateProject, deleteProject } = require('../controllers/projectController.js');
+const { protect } = require('../middleware/authMiddleware.js');
 const router = express.Router();
 
 router.route('/projects')

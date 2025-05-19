@@ -1,6 +1,6 @@
-const TimeLog = require('../models/TimeLog');
-const Project =require('../models/Project');
-const { checkIfInsideGeofence } = require('../utils/geoUtils');
+const TimeLog = require('../models/TimeLog.js');
+const Project =require('../models/Project.js');
+const { checkIfInsideGeofence } = require('../utils/geoUtils.js');
 
 exports.startSession = async (req, res) => {
   try {
